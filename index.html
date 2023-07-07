@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./index.css" />
+
+        <script src="./index.js" defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Satisfy&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="icon" type="image/x-icon" href="/unnamed.png">
+
+        <title>Tic-Tac-Toe</title>
+    </head>
+    <body>
+        
+        <div id="game">
+            <!-- Cell Values
+                 0  1  2
+                 3  4  5
+                 6  7  8
+            -->
+            <div class="grid-cell" data-value="0"></div>
+            <div class="grid-cell" data-value="1"></div>
+            <div class="grid-cell" data-value="2"></div>
+            <div class="grid-cell" data-value="3"></div>
+            <div class="grid-cell" data-value="4"></div>
+            <div class="grid-cell" data-value="5"></div>
+            <div class="grid-cell" data-value="6"></div>
+            <div class="grid-cell" data-value="7"></div>
+            <div class="grid-cell" data-value="8"></div>
+
+        </div>
+        <div class="status">
+            <span class="current-player">Its X turn</span>
+        </div>
+
+        
+        <div class="game-over">            
+            <span class="game-over-text"></span>
+
+
+            <div class="button_container">
+                <p class="description"></p>
+                <button class="restart"><span>Restart😀</span></button>
+
+                <canvas id="confetti"></canvas>
+                <button id="button" class="button-53" role="button"></button>
+                
+              </div>
+        </div>
+    </body>
+    
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
